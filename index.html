@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redmond Chess Champs - Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<script>
+    function toggleMenu() {
+      document.getElementById("nav-links").classList.toggle("show");
+    }
+  </script>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="head">
+                    <h1>Redmond Chess Champs</h1>
+                </div>
+                <div class="hamburger" onclick="toggleMenu()">☰</div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="tr.html">Tournament Registration</a></li>
+                    <li><a href="vo.html">Volunteer Opportunities</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Redmond Chess Champs</h1>
+                <hr>
+                <p>Promoting Chess Activities and Events in the Greater Seattle Area</p>
+            </div>
+        </section>
+    </header>
+
+    <main class="article container">
+        <h1>Welcome to the Redmond Chess Champs Website!</h1>
+        <div class="info-section">
+            <p>A Washington State Based 501(c)(3) Non-profit Corporation in the making</p>
+        </div>
+        
+        <div class="info-section">
+            <h2>Promoting Chess Events and activities in the Greater Seattle Area</h2>
+        </div>
+        
+        <div class="info-section">
+            <p>Chess4All(Now RCC) was founded in 2023 by founder/president Sid Siddem & currently led by Sid and the RCC team dedicated to improving chess education in the Greater Seattle Area. Our goal is to provide various chess activities to interested players to learn and improve. Please do participate in our events if interested!</p>
+        </div>
+        
+        <div class="info-section">
+            <p>Check out the "Events" tab if you are interested in participating in our events!</p>
+        </div>
+        
+    </main>
+    <script>
+        window.addEventListener('scroll', function () {
+          const nav = document.querySelector('nav');
+          if (window.scrollY > 10) {
+            nav.classList.add('scrolled');
+          } else {
+            nav.classList.remove('scrolled');
+          }
+        });
+      </script>
+      
+</body>
+</html>

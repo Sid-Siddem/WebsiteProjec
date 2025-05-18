@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Redmond Chess Champs - Tournament Registration</title>
+  <link rel="stylesheet" href="css/tr.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="container">
+        <h1 class="logo">Redmond Chess Champs</h1>
+        <div class="hamburger" id="hamburger">☰</div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="tr.html">Tournament Registration</a></li>
+          <li><a href="vo.html">Volunteer Opportunities</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Tournament Registration</h1>
+        <hr />
+      </div>
+    </section>
+  </header>
+
+  <main class="contact-info">
+    <h1>Tournament Registration</h1>
+    <p>
+      All RCC Events are registered through the
+      <a href="https://nwchess.com/OnlineRegistration/index.php" target="_blank">NWChess website</a>.
+    </p>
+    <p>
+      USCF Membership is required to participate in our tournaments. Make sure it doesn't expire before the event ends. You can also purchase it through us.
+    </p>
+    <p>
+      Be sure to create an account on NWChess.com so you can register for our tournaments.
+    </p>
+  </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("nav-links");
+
+      hamburger.addEventListener("click", function () {
+        navLinks.classList.toggle("show");
+      });
+
+      window.addEventListener("scroll", function () {
+        const nav = document.querySelector("nav");
+        if (window.scrollY > 10) {
+          nav.classList.add("scrolled");
+        } else {
+          nav.classList.remove("scrolled");
+        }
+      });
+    });
+  </script>
+</body>
+</html>

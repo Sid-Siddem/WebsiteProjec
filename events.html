@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redmond Chess Champs - Events</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/events.css">
+</head>
+<script>
+    function toggleMenu() {
+      document.getElementById("nav-links").classList.toggle("show");
+    }
+  
+    window.addEventListener('scroll', function () {
+      const nav = document.querySelector('nav');
+      if (window.scrollY > 10) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+  </script>
+  
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="head">
+                    <h1>Redmond Chess Champs</h1>
+                </div>
+                <div class="hamburger" onclick="toggleMenu()">☰</div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="tr.html">Tournament Registration</a></li>
+                    <li><a href="vo.html">Volunteer Opportunities</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Our Events</h1>
+                <hr>
+            </div>
+        </section>
+        <section class="bottom-text">
+            <div class="container">
+                <br>
+                <br>
+                <p class="text-1">We primarily host NWSRS & USCF Swiss tournaments(FIDE soon!) every month or so,
+                     and we get a variety of players from beginners(100-300 USCF) to<br><br>
+                     high-ranked players(FIDE Masters, and other 1st/2nd category) players. 
+                    Our tournaments are for everyone, 
+                    and we give out prizes such as trophies and<br><br> cash prizes.
+                </p>
+                <p class="text-2">
+                    Most of our events are hosted at Microsoft Building 40 Cafe in Redmond, Washington.
+                    <br><br> 
+                    15567 NE 31st St, Redmond, WA 98052 
+                    <br><br>
+                    Many food options and free parking in the vicinity for players!
+                </p>
+                <p class="text-4">
+                 Here are a couple of our past events below! 
+                </p>
+            </div>
+
+        </section>
+        <section class="images">
+            <div class="image-grid">
+                <!-- Row 1: 3 images -->
+                <div class="row">
+                  <img src="image/image1.jpeg" alt="Image 1">
+                  <img src="image/image2.jpeg" alt="Image 2">
+                  <img src="image/image3.jpeg" alt="Image 3">
+                </div>
+              
+                <!-- Row 2: 4 images -->
+                <div class="row">
+                  <img src="image/image4.jpeg" alt="Image 4">
+                  <img src="image/image5.jpeg" alt="Image 5">
+                  <img src="image/image6.jpeg" alt="Image 6">
+                  <img src="image/image7.jpeg" alt="Image 7">
+                </div>
+              
+                <!-- Row 3: 3 images -->
+                <div class="row">
+                  <img src="image/image8.jpeg" alt="Image 8">
+                  <img src="image/image9.jpeg" alt="Image 9">
+                  <img src="image/image10.jpeg" alt="Image 10">
+                </div>
+              </div> 
+        </section>
+    </header>
+
+    <main class="article container">
+        <p></p>
+        
+    </main>
+    <script>
+        window.addEventListener('scroll', function () {
+          const nav = document.querySelector('nav');
+          if (window.scrollY > 10) {
+            nav.classList.add('scrolled');
+          } else {
+            nav.classList.remove('scrolled');
+          }
+        });
+      </script>
+</body>
+</html>

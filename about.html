@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redmond Chess Champs - Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+</head>
+<script>
+  function toggleMenu() {
+    document.getElementById("nav-links").classList.toggle("show");
+  }
+
+  window.addEventListener('scroll', function () {
+    const nav = document.querySelector('nav');
+    if (window.scrollY > 10) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+</script>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="head">
+                    <h1>Redmond Chess Champs</h1>
+                </div>
+                <div class="hamburger" onclick="toggleMenu()">☰</div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="tr.html">Tournament Registration</a></li>
+                    <li><a href="vo.html">Volunteer Opportunities</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <div class="hero-text">
+                <h1>About Us</h1>
+                <hr>
+            </div>
+        </section>
+    </header>
+    <section class="about-us">
+        <div class="about-card">
+          <img src="image/Sid.jpeg" alt="Sid Siddem">
+          <div class="about-text">
+            <h2>Sid Siddem</h2>
+            <h4>Founder & President</h4>
+            <p>
+                Hi! I am Sid Siddem, a junior at Lake Washington High School and an avid chess lover. 
+                I have been playing chess competitively since 5th grade, and I have enjoyed my chess 
+                journey so far. I founded RCC with the mission to provide more chess opportunities
+                 to aspiring players in the Bellevue/Redmond/Sammamish area and host USCF events. 
+                  I also have had experience working as a Chess Coach online before at 425KidsChess,
+                  teaching casual players methods to improve. Along with hosting tournaments and coaching, I also enjoy competing in 
+                   tournaments. I have a peak NWSRS rating of 1750 and a USCF rating of 1350, 
+                   and I tied for 3rd/4th in the Washington State Chess Championship 
+                   2023(Rising Stars Section). I also represented Team Washington 
+                   in the 10th grade division in the WA VS BC Intermat in Spring 2024. 
+                   In my free time, I also enjoy playing on Chess.com(Rapid Rating ~2000), 
+                   and participating in various extracurriculars at my school such as DECA,
+                    TSA, and MUN. Hope to see you playing at RCC tournaments!
+            </p>
+          </div>
+        </div>
+      
+        <div class="about-card">
+          <img src="image/Christos.jpg" alt="Christos Boulis">
+          <div class="about-text">
+            <h2>Christos Boulis</h2>
+            <h4>Vice President</h4>
+            <p>Hello, I am Christos Boulis, I am a junior at Northwest High School 
+                a private school in the Capitol Hill Area.  I have been playing chess since I was 6 years old but started taking chess seriously in 6th grade. 
+                I am one of the people working with RCC to provide chess opportunities to chess players all throughout the Seattle area.
+                 I have a USCF Rating of 1841 and a Fide rating of 1832. 
+                 I am still an avid tournament player, even though high school has gotten very busy. 
+                Some of my best accomplishments were winning the U2100 Vegas Regional open back in August 2022 
+                and getting tying for first place in the U2000 Portland open back in 2023.  
+                Outside of chess I am an avid tutor at my school helping kids primarily with math and SAT prep, 
+                and a student athlete: Weightlifting, Track, Frisbee. I am really excited to be working 
+                with RCC and hope to see you (and maybe even challenge you!) on the board. </p>
+          </div>
+        </div>
+      </section>
+      
+
+    <script>
+        window.addEventListener('scroll', function () {
+          const nav = document.querySelector('nav');
+          if (window.scrollY > 10) {
+            nav.classList.add('scrolled');
+          } else {
+            nav.classList.remove('scrolled');
+          }
+        });
+      </script>
+      
+</body>
+</html>

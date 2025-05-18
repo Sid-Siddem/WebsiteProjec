@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redmond Chess Champs - Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="head">
+              <h1>Redmond Chess Champs</h1>
+              </div> 
+              <div class="hamburger" onclick="toggleMenu()">☰</div>
+              <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="tr.html">Tournament Registration</a></li>
+                <li><a href="vo.html">Volunteer Opportunities</a></li>
+              </ul>
+            </div>
+          </nav>
+          
+
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Contact Us</h1>
+                <hr>
+            </div>
+        </section>
+    </header>
+
+    <main class="contact-info">
+        <h1>Contact Info</h1>
+    <p>Please don't hesitate to contact us for Tournament registration, Tournament concerns, etc.</p>
+    <p>You can contact us at redmondchesschamps@gmail.com, or at ssiddem@outlook.com for more urgent concerns</p>
+    <p>Our company phone number is +1 425-520-5627</p>
+    </main>
+    <script>
+        window.addEventListener('scroll', function () {
+          const nav = document.querySelector('nav');
+          if (window.scrollY > 10) {
+            nav.classList.add('scrolled');
+          } else {
+            nav.classList.remove('scrolled');
+          }
+        });
+      </script>
+      <script>
+        function toggleMenu() {
+          document.getElementById("nav-links").classList.toggle("show");
+        }
+      
+        window.addEventListener('scroll', function () {
+          const nav = document.querySelector('nav');
+          if (window.scrollY > 10) {
+            nav.classList.add('scrolled');
+          } else {
+            nav.classList.remove('scrolled');
+          }
+        });
+      </script>
+      
+</body>
+
+</html>
